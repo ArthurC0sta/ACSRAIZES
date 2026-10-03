@@ -11,6 +11,7 @@ import {
 
 const whatsapp = 'https://wa.me/5511967239439?text=Ol%C3%A1%2C%20ACSRAIZES!%20Quero%20montar%20uma%20mesa%20especial.'
 const instagram = 'https://www.instagram.com/acsraizes?stkn=MWlmbHl2NTdya3hwMw=='
+const imageUrl = (fileName) => `${import.meta.env.BASE_URL}images/${fileName}`
 
 const values = [
   ['Acolhimento & Afeto', 'A mesa como lugar de fortalecer vínculos e criar laços profundos.'],
@@ -118,7 +119,7 @@ function App() {
           </Reveal>
           <Reveal className="hero-visual" delay={0.08}>
             <div className="hero-image-wrap">
-              <img src="/images/5752.jpg" alt="Mesa posta com louças verdes e estampa de limões" fetchPriority="high" />
+              <img src={imageUrl('5752.jpg')} alt="Mesa posta com louças verdes e estampa de limões" fetchPriority="high" />
             </div>
             <div className="floating-note">
               <Heart size={19} weight="fill" />
@@ -139,9 +140,9 @@ function App() {
             <p>Louças, sousplats, guardanapos e detalhes versáteis para encontros íntimos ou grandes celebrações.</p>
           </Reveal>
           <div className="gallery-grid">
-            <Reveal className="gallery-item gallery-large"><img src="/images/5801.jpg" alt="Composição de mesa com louças estampadas com limões" loading="lazy" /></Reveal>
-            <Reveal className="gallery-item gallery-tall" delay={0.06}><img src="/images/5900.jpg" alt="Lugar à mesa em azul-marinho e branco" loading="lazy" /></Reveal>
-            <Reveal className="gallery-item" delay={0.1}><img src="/images/5825.jpg" alt="Detalhe de composição floral em tons de vermelho" loading="lazy" /></Reveal>
+            <Reveal className="gallery-item gallery-large"><img src={imageUrl('5801.jpg')} alt="Composição de mesa com louças estampadas com limões" loading="lazy" /></Reveal>
+            <Reveal className="gallery-item gallery-tall" delay={0.06}><img src={imageUrl('5900.jpg')} alt="Lugar à mesa em azul-marinho e branco" loading="lazy" /></Reveal>
+            <Reveal className="gallery-item" delay={0.1}><img src={imageUrl('5825.jpg')} alt="Detalhe de composição floral em tons de vermelho" loading="lazy" /></Reveal>
           </div>
         </section>
 
@@ -167,7 +168,7 @@ function App() {
         </section>
 
         <section className="about section shell" id="sobre">
-          <Reveal className="about-image"><img src="/images/5945.jpg" alt="Fundadora da ACSRAIZES sorrindo" loading="lazy" /></Reveal>
+          <Reveal className="about-image"><img src={imageUrl('5945.jpg')} alt="Fundadora da ACSRAIZES sorrindo" loading="lazy" /></Reveal>
           <Reveal className="about-copy">
             <Sparkle size={28} weight="duotone" />
             <h2>O encontro é a nossa raiz</h2>
@@ -190,7 +191,7 @@ function App() {
         </section>
 
         <section className="closing shell">
-          <img src="/images/5829.jpg" alt="Montagem cuidadosa de uma mesa posta" loading="lazy" />
+          <img src={imageUrl('5829.jpg')} alt="Montagem cuidadosa de uma mesa posta" loading="lazy" />
           <div className="closing-overlay" />
           <Reveal className="closing-content">
             <h2>Qual memória vamos criar juntos?</h2>
