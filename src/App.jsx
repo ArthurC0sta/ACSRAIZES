@@ -107,8 +107,8 @@ function App() {
       <main>
         <section className="hero shell" id="inicio">
           <Reveal className="hero-copy">
-            <p className="eyebrow">Acervo de mesa posta</p>
-            <h1>Celebrações que criam <em>raízes.</em></h1>
+            <p className="eyebrow">Locação de Mesa Posta</p>
+            <h1>Fortalecendo as <em>raízes</em> através da mesa posta.</h1>
             <p className="hero-text">Peças escolhidas com afeto para transformar encontros em memórias inesquecíveis.</p>
             <div className="hero-actions">
               <a className="button" href={whatsapp} target="_blank" rel="noreferrer">
@@ -191,7 +191,7 @@ function App() {
         </section>
 
         <section className="closing shell">
-          <img src={imageUrl('5829.jpg')} alt="Montagem cuidadosa de uma mesa posta" loading="lazy" />
+          <img src={imageUrl('fundadora-mesa-posta.jpg')} alt="Fundadora da ACSRAIZES preparando uma composição de mesa posta" loading="lazy" />
           <div className="closing-overlay" />
           <Reveal className="closing-content">
             <h2>Qual memória vamos criar juntos?</h2>
